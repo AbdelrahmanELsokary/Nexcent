@@ -11,6 +11,7 @@ body {
 }
 :root {
   --main-color: #4caf4f;
+  --main-color2:rgba(76, 175, 79, 0.286);
   --text-color: #717171;
   --title-color: #4d4d4d;
   --black: #000000;
@@ -47,6 +48,8 @@ ul {
   list-style: none;
 }
 header {
+  position: fixed;
+  width: 100%;
   padding: 25px 0;
 }
 header .container {
@@ -117,4 +120,53 @@ header .container nav input{
     border: 2px solid var(--main-color);
     transition: 0.5s;
   }
+}
+p{
+  color: var(--text-color);
+}
+.d_flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.btn{
+  display: block;
+  background-color: var(--main-color);
+  color: var(--white);
+  width: fit-content;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+.hero {
+  background-color: var(--bg-alt);
+  padding-top: 180px;
+  height: 100vh;
+}
+.hero .container h1{
+  font-size: 40px;
+  color: var(--title-color);
+}
+.hero .container h1 span{
+  color: var(--main-color);
+}
+.hero .container p{
+  padding-top: 15px;
+}
+.hero ul{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.hero ul li:nth-child(1){
+  background-color: var(--main-color);
+}
+.hero ul li{
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color2);
+  border-radius: 50%;
+  margin-right: 20px;
 }
