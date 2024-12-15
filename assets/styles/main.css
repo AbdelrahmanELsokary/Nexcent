@@ -3,6 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 :root {
   --main-color: #4caf4f;
   --text-color: #717171;
@@ -32,5 +38,77 @@
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+header {
+  padding: 25px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container a {
+  color: var(--bg);
+  font-size: 17px;
+}
+header .container .logo a{
+  font-size: 35px;
+}
+header .container nav {
+  position: relative;
+}
+header .container nav input{
+  appearance: none;
+}
+@media (max-width:991px) {
+  header .container nav label img{
+    cursor: pointer;
+  }
+  header .container nav ul{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    min-width: 200px;
+    background-color: var(--bg-alt);
+    border: 1px solid;
+  }
+  header .container nav input:checked + ul{
+    display: block;
+  }
+  header .container nav ul li{
+    padding: 15px;
+  }
+  header .container nav ul li:not(:last-child){
+    border-bottom: 1px solid ;
+  }
+}
+@media (min-width:992px) {
+  header .container nav label , input{
+    display: none;
+  }
+  header .container nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  header .container nav ul li:nth-child(7){
+    margin-left: 100px;
+  }
+  header .container nav ul li .login{
+    color: var(--main-color);
+  }
+  header .container nav ul li .sign_up{
+    background-color:var(--main-color);
+    color: var(--bg-alt);
+    border-radius: 6px;
+    padding: 10px 15px;
   }
 }
