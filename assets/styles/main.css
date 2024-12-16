@@ -135,6 +135,7 @@ header .container nav input{
 }
 p{
   color: var(--text-color);
+  line-height: 1.4;
   padding-top: 12px;
 }
 .d_flex{
@@ -151,7 +152,7 @@ p{
   width: 125px;
   text-align: center;
   border-radius: 3px;
-  padding: 10px 15px;
+  padding: 15px;
   margin-top: 20px;
 }
 .hero {
@@ -234,6 +235,7 @@ h2{
 }
 .helping{
   background-color: var(--bg-alt);
+  margin-top: 20px;
 }
 .helping .container{
   padding: 50px 0;
@@ -261,4 +263,7 @@ h2{
   font-weight: 600;
   color: var(--title-color);
   padding-bottom: 5px;
+}
+.design .container{
+  gap: 45px;
 }
