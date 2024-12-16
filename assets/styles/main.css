@@ -50,6 +50,7 @@ ul {
 header {
   position: fixed;
   width: 100%;
+  background-color: var(--bg-alt);
   padding: 25px 0;
 }
 header .container {
@@ -91,6 +92,9 @@ header .container nav input{
   }
   header .container nav ul li:not(:last-child){
     border-bottom: 1px solid ;
+  }
+  .hero .container .image {
+    display: none;
   }
 }
 @media (min-width:992px) {
@@ -142,8 +146,10 @@ p{
 }
 .hero {
   background-color: var(--bg-alt);
-  padding-top: 180px;
-  height: 100vh;
+}
+.hero .container{
+  height: calc(100vh - 60px);
+  padding-top: 80px;
 }
 .hero .container h1{
   font-size: 40px;
@@ -158,15 +164,29 @@ p{
 .hero ul{
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  padding: 25px 0 ;
 }
 .hero ul li:nth-child(1){
   background-color: var(--main-color);
 }
 .hero ul li{
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background-color: var(--main-color2);
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 8px;
+}
+h2{
+  font-size: var(--h2-size);
+  color: var(--title-color);
+}
+.clients .container{
+  text-align: center;
+  padding-top: 30px;
+}
+.clients .container p{
+  padding-top: 7px;
+}
+.clients .container .image{
+  padding-top: 30px;
 }
