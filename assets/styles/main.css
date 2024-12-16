@@ -13,7 +13,7 @@ body {
   --main-color: #4caf4f;
   --main-color2:rgba(76, 175, 79, 0.286);
   --text-color: #717171;
-  --bg2: #a7dab05a;
+  --shadow: #73e78863;
   --title-color: #4d4d4d;
   --black: #000000;
   --white: #ffffff;
@@ -52,6 +52,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: var(--bg-alt);
+  z-index: 1;
   padding: 25px 0;
 }
 header .container {
@@ -208,7 +209,7 @@ h2{
 .community .container .companies .company{
   height: 245px;
   border-radius: 5px;
-  box-shadow: 0 0 3px 1px var(--text-color);
+  box-shadow: 0 0 3px 1px var(--shadow);
   padding: 30px 20px ;
 }
 .community .container .image{
@@ -227,4 +228,37 @@ h2{
   left: 120px;
   top: 10px;
   z-index: -1;
+}
+.spendin .container{
+  padding-top: 70px;
+}
+.helping{
+  background-color: var(--bg-alt);
+}
+.helping .container{
+  padding: 50px 0;
+}
+.helping .container h2 span{
+  color: var(--main-color);
+}
+.helping .container p{
+  color: var(--bg);
+}
+.helping .container .icons .left .icon , .right .icon{
+  padding: 20px;
+}
+.helping .container .icons .icon{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.helping .container .icons .icon .inf_icon span{
+  display: block;
+  color: var(--text-color);
+}
+.helping .container .icons .icon .inf_icon .num{
+  font-size: 27px;
+  font-weight: 600;
+  color: var(--title-color);
+  padding-bottom: 5px;
 }
