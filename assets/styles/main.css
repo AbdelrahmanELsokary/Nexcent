@@ -233,9 +233,9 @@ h2{
 .spendin .container{
   padding-top: 70px;
 }
-.helping{
+.helping , .tim_smith{
   background-color: var(--bg-alt);
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .helping .container{
   padding: 50px 0;
@@ -264,6 +264,26 @@ h2{
   color: var(--title-color);
   padding-bottom: 5px;
 }
-.design .container{
+.design .container ,
+.tim_smith .container{
   gap: 45px;
+  padding-top: 50px;
+}
+.tim_smith .container p:nth-child(1){
+  color: var(--title-color);
+}
+.tim_smith .container h3{
+  color: var(--main-color);
+  padding-top: 15px;
+}
+.tim_smith .container .image{
+  gap: 44px;
+  padding-top: 20px;
+}
+.tim_smith .container .image a{
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: bold;
+  gap: 10px;
 }
