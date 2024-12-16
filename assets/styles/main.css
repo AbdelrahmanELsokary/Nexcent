@@ -13,6 +13,7 @@ body {
   --main-color: #4caf4f;
   --main-color2:rgba(76, 175, 79, 0.286);
   --text-color: #717171;
+  --bg2: #a7dab05a;
   --title-color: #4d4d4d;
   --black: #000000;
   --white: #ffffff;
@@ -63,7 +64,11 @@ header .container a {
   font-size: 17px;
 }
 header .container .logo a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-size: 35px;
+  padding-right: 20px;
 }
 header .container nav {
   position: relative;
@@ -106,20 +111,22 @@ header .container nav input{
     align-items: center;
     gap: 40px;
   }
-  header .container nav ul li:nth-child(7){
-    margin-left: 100px;
-  }
   header .container nav ul li .login{
     color: var(--main-color);
+    margin-left: 50px;
+    
   }
   header .container nav ul li .sign_up{
-    background-color:var(--main-color);
+    display: inline-block;
+    background-color: var(--main-color);
     color: var(--bg-alt);
     border-radius: 6px;
+    width: 100px;
+    text-align: center;
     padding: 10px 15px;
   }
   header .container nav ul li .sign_up:hover{
-    background-color:var(--white);
+    background-color: inherit;
     color: var(--main-color);
     border: 2px solid var(--main-color);
     transition: 0.5s;
@@ -189,4 +196,36 @@ h2{
 }
 .clients .container .image{
   padding-top: 30px;
+}
+.community .container{
+  text-align: center;
+  padding-top: 60px;
+}
+.community .container h3{
+  font-size: 24px;
+  color: var(--title-color);
+  padding-top: 10px;
+}
+.community .container p{
+  padding-top: 10px;
+}
+.community .container .companies{
+  padding-top: 45px;
+}
+.community .container .image{
+  height: 50px;
+}
+.community .container .image {
+  position: relative;
+}
+.community .container .image::before{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  background-color: var(--bg2);
+  border-radius: 10px 5px 20px 5px;
+  left: 120px;
+  top: 10px;
+  z-index: -1;
 }
