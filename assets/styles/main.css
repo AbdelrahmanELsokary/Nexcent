@@ -102,6 +102,9 @@ header .container nav input{
   .hero .container .image {
     display: none;
   }
+.marketing .image{
+  margin-top: 60px;
+}
 }
 @media (min-width:992px) {
   header .container nav label , input{
@@ -195,7 +198,7 @@ h2{
 .clients .container .image{
   padding-top: 30px;
 }
-.community .container{
+.community .container , .marketing .container{
   text-align: center;
   padding-top: 60px;
 }
@@ -208,10 +211,10 @@ h2{
   padding-top: 45px;
 }
 .community .container .companies .company{
-  height: 245px;
+  height: 255px;
   border-radius: 5px;
   box-shadow: 0 0 3px 1px var(--shadow);
-  padding: 30px 20px ;
+  padding: 25px 20px ;
 }
 .community .container .image{
   height: 50px;
@@ -268,6 +271,7 @@ h2{
 .tim_smith .container{
   gap: 45px;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .tim_smith .container p:nth-child(1){
   color: var(--title-color);
@@ -280,10 +284,33 @@ h2{
   gap: 44px;
   padding-top: 20px;
 }
-.tim_smith .container .image a{
+.tim_smith .container .image a ,
+.info_image a{
   display: flex;
   align-items: center;
   color: var(--main-color);
   font-weight: bold;
   gap: 10px;
+}
+.marketing .images{
+  gap: 18px;
+  padding-top: 18px;
+}
+.marketing .image{
+  position: relative;
+}
+.marketing .info_image{
+  position: absolute;
+  bottom: -50px;
+  left: 19px;
+  background-color: var(--bg-alt);
+  border-radius: 8px;
+  width: 330px;
+  height: 150px;
+  box-shadow: 0 0 9px 5px var(--shadow);
+  padding: 20px;
+} 
+.marketing .info_image a{
+  justify-content: center;
+  padding: 15px 0;
 }
