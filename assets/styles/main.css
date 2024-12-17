@@ -152,7 +152,7 @@ p{
   display: block;
   background-color: var(--main-color);
   color: var(--white);
-  width: 125px;
+  width: 146px;
   text-align: center;
   border-radius: 3px;
   padding: 15px;
@@ -198,7 +198,9 @@ h2{
 .clients .container .image{
   padding-top: 30px;
 }
-.community .container , .marketing .container{
+.community .container ,
+.marketing .container ,
+.pellentesque .container {
   text-align: center;
   padding-top: 60px;
 }
@@ -313,4 +315,14 @@ h2{
 .marketing .info_image a{
   justify-content: center;
   padding: 15px 0;
+}
+.pellentesque {
+  background-color: var(--bg-alt);
+  margin-top: 100px;
+  padding-bottom: 15px;
+}
+.pellentesque .container a{
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
 }
