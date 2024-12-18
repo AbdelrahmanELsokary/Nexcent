@@ -18,7 +18,8 @@ body {
   --title-color: #4d4d4d;
   --black: #000000;
   --white: #ffffff;
-  --white2: #aeaeae;
+  --white3: #dcd8d8;
+  --white2: #ede0e0;
   --bg-alt: #f5f7fa;
   --bg: #263238;
   --h1-size: 40px;
@@ -115,7 +116,7 @@ header .container nav input{
   header .container nav ul{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 33px;
   }
   header .container nav ul li .login{
     color: var(--main-color);
@@ -226,12 +227,12 @@ h2{
 .community .container .image {
   position: relative;
 }
-.community .container .image::before{
+.community .container .company .image::before{
   content: "";
   position: absolute;
   width: 50px;
   height: 40px;
-  background-color: var(--bg2);
+  background-color: var(--white3);
   border-radius: 10px 5px 20px 5px;
   left: 120px;
   top: 10px;
