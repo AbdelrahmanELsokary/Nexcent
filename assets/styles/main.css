@@ -13,10 +13,12 @@ body {
   --main-color: #4caf4f;
   --main-color2:rgba(76, 175, 79, 0.286);
   --text-color: #717171;
+  --bg3: #71717148;
   --shadow: #73e78863;
   --title-color: #4d4d4d;
   --black: #000000;
   --white: #ffffff;
+  --white2: #aeaeae;
   --bg-alt: #f5f7fa;
   --bg: #263238;
   --h1-size: 40px;
@@ -102,12 +104,12 @@ header .container nav input{
   .hero .container .image {
     display: none;
   }
-.marketing .image{
+  .marketing .image{
   margin-top: 60px;
-}
+  }
 }
 @media (min-width:992px) {
-  header .container nav label , input{
+  header .container nav input , label  {
     display: none;
   }
   header .container nav ul{
@@ -323,6 +325,115 @@ h2{
 }
 .pellentesque .container a{
   display: flex;
+  gap: 10px;
   align-items: center;
   margin: 20px auto;
+}
+footer{
+  background-color: var(--bg);
+  padding: 60px 0;
+}
+footer .container {
+  align-items: flex-start;
+}
+footer .container .logo {
+  padding-right: 90px;
+}
+footer .container .logo a{
+  color: var(--white);
+  font-size: 35px;
+  font-weight: 600;
+}
+footer .social_icons {
+  padding: 40px 0;
+} 
+footer .ball{
+  padding-left: 60px;
+}
+footer .twitter{
+  padding-left: 120px;
+}
+footer .youtube{
+  padding-left: 180px;
+}
+.social_icons .instagram::before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-image: url(../icons/instagram.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: var(--bg3);
+}
+.social_icons .ball::before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-image: url(../icons/dribble.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: var(--bg3);
+}
+.social_icons .twitter::before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-image: url(../icons/twitter.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: var(--bg3);
+}
+.social_icons .youtube::before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-image: url(../icons/youtube.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: var(--bg3);
+}
+footer h3{
+  color: var(--white);
+}
+footer .container p , a{
+  color: var(--white2);
+}
+footer .container p {
+  padding-top: 30px;
+}
+footer .container .about {
+  padding-left: 30px;
+}
+footer .container .about h3{
+  padding-bottom: 20px;
+}
+footer .container .about li{
+  padding-bottom: 13px;
+}
+footer .container .email .input{
+  display: flex;
+  align-items: center;
+  background-color: var(--bg3);
+  border-radius: 10px;
+  padding: 5px 20px 5px 10px ;
+  margin-top: 25px;
+}
+footer .container .email .input input{
+  border: none;
+  outline: none;
+  background-color: initial;
+  padding: 10px;
+}
+footer .container .email .input input::placeholder{
+  color: var(--white2);
+  font-size: 14px;
+  font-weight: 600;
 }
