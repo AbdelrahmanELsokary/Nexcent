@@ -121,7 +121,6 @@ header .container nav input{
   header .container nav ul li .login{
     color: var(--main-color);
     margin-left: 50px;
-    
   }
   header .container nav ul li .sign_up{
     display: inline-block;
