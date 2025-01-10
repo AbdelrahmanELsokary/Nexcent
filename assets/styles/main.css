@@ -52,9 +52,20 @@ a {
 ul {
   list-style: none;
 }
-body.dark-mode{
+  body.dark-mode ,
+  body.dark-mode .hero ,
+  body.dark-mode .pellentesque ,
+  body.dark-mode .helping ,
+  body.dark-mode .tim_smith 
+{
   background-color: var(--bg2);
   color: var(--white);
+  transition: 0.5s;
+}
+body.dark-mode header ,
+body.dark-mode footer 
+{
+  background-color: rgb(22, 22, 22);
 }
 header {
   position: fixed;
@@ -245,7 +256,11 @@ h2{
 .spendin .container{
   padding-top: 70px;
 }
-.helping , .tim_smith{
+.tim_smith {
+  background-color: var(--bg-alt);
+  margin-top: 30px;
+}
+.helping  {
   background-color: var(--bg-alt);
   margin-top: 30px;
 }
